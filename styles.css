@@ -1,9 +1,31 @@
 /* styles.css */
-
+.container{
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
 html {
 
     background-color:darkslategray;
 }
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons horizontally */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Spacing between buttons */
+  margin-top: 20px; /* Top margin for the button container */
+}
+
+.myBtn {
+  /* Button properties */
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(14, 14, 14);
+  border: none;
+  cursor: pointer;
+  font-style: Serif;
+}
+
 
 .centered-container {
     text-align: center;
