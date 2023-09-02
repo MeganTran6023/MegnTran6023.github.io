@@ -2,11 +2,36 @@
 .container{
   max-width: 850px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+
+}
+
+/*for about me buttons */
+
+.containerButtons{
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 html {
 
     background-color:darkslategray;
+}
+
+/*add button*/
+.button {
+
+
+  background-color: rgb(243, 228, 198);
+  color:black;
+  text-align: center;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  margin-right: 20px;
+
 }
 
 .button-container {
@@ -16,15 +41,7 @@ html {
   margin-top: 20px; /* Top margin for the button container */
 }
 
-.myBtn {
-  /* Button properties */
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: rgb(14, 14, 14);
-  border: none;
-  cursor: pointer;
-  font-style: Serif;
-}
+
 
 
 .centered-container {
