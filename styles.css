@@ -14,7 +14,10 @@
   background-position: cover;
 
 }
+.aboutmeimage{
 
+  margin-left: 270px;
+}
 /* Navigator to click on different tabs*/
 
 .navbar{
