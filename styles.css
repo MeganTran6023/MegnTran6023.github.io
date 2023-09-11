@@ -5,6 +5,21 @@
 
 }
 
+/*Three images side by side column */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  text-align: center; /* Center the content within each column */
+  padding-top: 20px;
+}
+
+/*Three images side by side row */
+.row {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  align-items: center; /* Center columns vertically */
+}
 
 
 /* Background image for site */
