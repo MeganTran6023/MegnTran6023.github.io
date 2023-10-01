@@ -21,6 +21,11 @@
   align-items: center; /* Center columns vertically */
 }
 
+/*text below images in projects page: */
+.caption {
+  display: block;
+}
+
 
 /* Background image for site */
 .banner{
@@ -37,6 +42,15 @@
   float: center;
   clear:both;
 }
+
+.contentAboutMe{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+}
 /* Navigator to click on different tabs*/
 
 .navbar{
@@ -49,9 +63,9 @@
 }
 
 .tab{
-margin-left: 0px;
-font-size: 20px;
-line-height: 1.5;
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
 
 
 }
