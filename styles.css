@@ -30,10 +30,12 @@
 /* Background image for site */
 .banner{
   width: 100%;
-  height: 100vh;
+  height: 102%;
   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(homewallpaper.jpg); /*makes background image darker */
   background-size: cover;
   background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 .aboutmeimage{
