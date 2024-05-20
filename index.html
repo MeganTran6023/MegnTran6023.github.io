@@ -13,7 +13,7 @@ body {
 .menu {
   float: left;
   width: 20%;
-  background-color: gray; /* Gray background for the menu */
+  background-color: DimGray; /* Gray background for the menu */
 }
 .menuitem {
   padding: 8px;
@@ -23,6 +23,7 @@ body {
 .menuitem a {
   color: lime; /* Green text for links */
   text-decoration: none; /* No underline for links */
+  font-size: 20px;
 }
 .main {
   float: left;
@@ -31,7 +32,7 @@ body {
   overflow: hidden;
 }
 .right {
-  background-color: gray; /* Gray background for the right section */
+  background-color: DimGray; /* Gray background for the right section */
   float: left;
   width: 20%;
   padding: 10px 15px;
@@ -42,6 +43,18 @@ img {
   margin-right: 20px;
   width: 40%;
 }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 35px; /* Adjusted margin to bring icons closer */
+}
+
+p {
+  font-size: 24px;
+  line-height: 3.5vh;
+}
+
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
@@ -70,7 +83,6 @@ img {
   <div class="menu">
     <div class="menuitem"><a href="#projects">Projects</a></div>
     <div class="menuitem"><a href="#resume">Resume</a></div>
-    <div class="menuitem"><a href="#contact">Contact</a></div>
     <div class="menuitem"><a href="#artwork">Artwork</a></div>
   </div>
 
@@ -88,7 +100,19 @@ img {
   </div>
 </div>
 
-<div style="background-color:#333;text-align:center;padding:10px;margin-top:7px;font-size:12px;"></div>
+<div style="background-color:#333;text-align:center;padding:10px;margin-top:7px;font-size:12px; display: flex; justify-content: center; align-items: center;">
+  <a href="https://github.com/MeganTran6023" style="display: inline-block;">
+    <img src="GitHub-Mark.png" alt="Github" style="width:50px;height:auto;" class="icon">
+  </a>
+
+  <a href="https://www.linkedin.com/in/megantran15/" style="display: inline-block;">
+    <img src="linkedin.png" alt="Linkedin" style="width:50px;height:auto;" class="icon">
+  </a>
+
+  <a href="mailto:megantran@usf.edu" style="display: inline-block;">
+    <img src="outlook.png" alt="Outlook" style="width:50px;height:auto;" class="icon">
+  </a>
+</div>
 
 </body>
 </html>
