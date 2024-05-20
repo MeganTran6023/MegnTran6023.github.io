@@ -10,6 +10,15 @@ body {
   background-color: black;
   color: lime; /* Green text */
 }
+
+.homelink {
+}
+
+.homelink a {
+    color: lime; /* Green text for links */
+    text-decoration: none; /* No underline for links */
+}
+
 .menu {
   float: left;
   width: 20%;
@@ -75,13 +84,13 @@ p {
 </head>
 <body style="font-family:Lucida Console, Courier New, monospace;">
 
-<div style="background-color:#333;padding:15px;">
-  <h1 style="color:lime;">Megan Tran</h1>
-</div>
+  <div style="background-color:#333;padding:15px;">
+    <div class="homelink"><h1 style="color:lime;"><a href="index_test.html">Megan Tran</a></h1></div>
+  </div>
 
 <div style="overflow:auto">
   <div class="menu">
-    <div class="menuitem"><a href="#projects">Projects</a></div>
+    <div class="menuitem"><a href="project.html">Projects</a></div>
     <div class="menuitem"><a href="#resume">Resume</a></div>
     <div class="menuitem"><a href="#artwork">Artwork</a></div>
   </div>
