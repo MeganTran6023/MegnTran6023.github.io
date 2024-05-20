@@ -1,52 +1,125 @@
-<!-- contact.html -->
-
+<!DOCTYPE html>
 <html>
 <head>
-<!--Responsive website-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title page-->
-    <title>Megan Tran</title>
-    <link rel="stylesheet" href="styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: lime; /* Green text */
+}
+.menu {
+  float: left;
+  width: 20%;
+  background-color: DimGray; /* Gray background for the menu */
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.menuitem a {
+  color: lime; /* Green text for links */
+  text-decoration: none; /* No underline for links */
+  font-size: 20px;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: DimGray; /* Gray background for the right section */
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+img {
+  float: left;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 35px; /* Adjusted margin to bring icons closer */
+}
+
+p {
+  font-size: 24px;
+  line-height: 3.5vh;
+}
+
+.homelink {
+}
+
+.homelink a {
+    color: lime; /* Green text for links */
+    text-decoration: none; /* No underline for links */
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-    <!--Background image for site-->
-    <div class="banner">
-        <!--items for top part of site: navigation-->
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+<body style="font-family:Lucida Console, Courier New, monospace;">
 
-        <!--List of my project topics-->
-        <div class="content">
-            <h1 style="font-size: 6vw;font-family: Lucida Console, Courier New, monospace;">Projects</h1>
-            <p style="font-size: 1.5vw; font-family: Lucida Console, Courier New, monospace; line-height: 1.6; text-align: center;">Below are some things I worked on during my <br> high school, undergraduate, and post-undergraduate programs.</p>
-                <div class="row">
-                    <div class = "column">
-                        <a href="MachineLearning.html"><img src="codingcomputer.gif" alt="Machine Learning" style="width:80%"></a>
-                        <p style= "font-size: 1.5vw; margin-top:15px; font-family: Lucida Console, Courier New, monospace;">Machine Learning</p>
-                    </div>
-                    <div class = "column">
-                        <a href="Wetchemistry.html"><img src="chemistryset_dribbble.gif" alt="Wet Chemistry" style="width:100%"></a>
-                        <p style= "font-size: 1.5vw; margin-top:15px; font-family: Lucida Console, Courier New, monospace;">Wet Chemistry</p>
-                    </div>
-                    <div class = "column">
-                        <a href="CompChem.html"><img src="CompChem.png" alt="Computational Chemistry" style="width:80%"></a>
-                        <!-- <span class = "caption">Text below</span> -->
-                        <p style= "font-size: 1.5vw; margin-top:15px; font-family: Lucida Console, Courier New, monospace; text-align: center; line-height: 1.6;">Computational Chemistry</p>
-                    </div>
-                </div>
-                    
+<div style="background-color:#333;padding:15px;">
+  <div class="homelink"><h1 style="color:lime;"><a href="index.html">Megan Tran</a></h1></div>
+</div>
 
-                       
-        </div>
-        </div>
-       
-            
-    </div>
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="project.html">Projects</a></div>
+    <div class="menuitem"><a href="#resume">Resume</a></div>
+    <div class="menuitem"><a href="#artwork">Artwork</a></div>
+  </div>
 
-    </div>
+  <div class="main">
+    <h2>Projects</h2>
+    <p>In Progress.</p>
+  </div>
+
+  <div class="right">
+    <h2></h2>
+    <p></p>
+    <h2></h2>
+    <p></p>
+  </div>
+</div>
+
+<div style="background-color:#333;text-align:center;padding:10px;margin-top:7px;font-size:12px; display: flex; justify-content: center; align-items: center;">
+    <a href="https://github.com/MeganTran6023" style="display: inline-block;">
+      <img src="GitHub-Mark.png" alt="Github" style="width:50px;height:auto;" class="icon">
+    </a>
+  
+    <a href="https://www.linkedin.com/in/megantran15/" style="display: inline-block;">
+      <img src="linkedin.png" alt="Linkedin" style="width:50px;height:auto;" class="icon">
+    </a>
+  
+    <a href="mailto:megantran@usf.edu" style="display: inline-block;">
+      <img src="outlook.png" alt="Outlook" style="width:50px;height:auto;" class="icon">
+    </a>
+  </div>
+
+</body>
+</html>
