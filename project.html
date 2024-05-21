@@ -34,12 +34,15 @@ body {
 
 .proj_icons {
   display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to new lines */
   justify-content: center; /* Center items horizontally */
   gap: 17px; /* Add space between items */
 }
 
 .proj_icon {
-  width: 80%; /* Adjusted width for each image */
+  width: 100%; /* Make image responsive */
+  max-width: 200px; /* Optional: Set a max-width to control large images */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .right {
@@ -61,19 +64,22 @@ body {
     text-decoration: none; /* No underline for links */
 }
 
-figure figcaption{
+figure {
   text-align: center;
-  padding-right: 20%;
+  width: 100%;
+  max-width: 200px; /* Optional: Set a max-width for figures */
 }
 
-.pproject{
+figure figcaption {
+  text-align: center;
+}
+
+.pproject {
   font-size: 22px;
   text-align: center;
-  padding-right: 10%;
-
 }
 
-.pproject a{
+.pproject a {
   color: lime; /* Green text for links */
   text-decoration: none; /* No underline for links */
 }
@@ -113,54 +119,46 @@ figure figcaption{
     <h2>Projects</h2>
     <div class="proj_icons">
       <figure>
-      <a href="#WetChem" style="display: inline-block;">
-        <img src="chemistryset_dribbble.gif" alt="WetChem" class="proj_icon">
-      </a>
-      <figcaption>Credit: Dan Stack </figcaption>
-      <div class="pproject"><p class="pproject"><br> <a href="#WetChem">Wet Chemistry</a></p></div>
+        <a href="#WetChem" style="display: inline-block;">
+          <img src="chemistryset_dribbble.gif" alt="WetChem" class="proj_icon">
+        </a>
+        <figcaption>Credit: Dan Stack </figcaption>
+        <div class="pproject"><p class="pproject"><br> <a href="#WetChem">Wet Chemistry</a></p></div>
       </figure>
 
       <figure>
-      <a href="#ComputationalChem" style="display: inline-block;">
-        <img src="CompChem.png" alt="CompChem" class="proj_icon">
-      </a>
-      <figcaption></figcaption>
-      <div class="pproject"><p class="pproject"><br> <a href="#CompChem">Computational Chemistry</a></p></div>
+        <a href="#ComputationalChem" style="display: inline-block;">
+          <img src="CompChem.png" alt="CompChem" class="proj_icon">
+        </a>
+        <figcaption></figcaption>
+        <div class="pproject"><p class="pproject"><br> <a href="#CompChem">Computational Chemistry</a></p></div>
       </figure>
 
       <figure>
-      <a href="#CompSci" style="display: inline-block;">
-        <img src="codingcomputer.gif" alt="CompSci" class="proj_icon" >
-      </a>
-      <figcaption>Credit: Linkedin </figcaption>
-      <div class="pproject"><p class="pproject"><br> <a href="#CompSci">Computer Science</a></p></div>
+        <a href="#CompSci" style="display: inline-block;">
+          <img src="codingcomputer.gif" alt="CompSci" class="proj_icon">
+        </a>
+        <figcaption>Credit: Linkedin </figcaption>
+        <div class="pproject"><p class="pproject"><br> <a href="#CompSci">Computer Science</a></p></div>
       </figure>
-
-
     </div>
   </div>
 
   <div class="right"></div>
-  </div>
-
-
-</head>
-<body>
-
-
+</div>
 
 <div style="background-color:#333;text-align:center;padding:10px;margin-top:7px;font-size:12px; display: flex; justify-content: center; align-items: center;">
-    <a href="https://github.com/MeganTran6023" style="display: inline-block;">
-      <img src="GitHub-Mark.png" alt="Github" style="width:50px;height:auto;" class="icon">
-    </a>
-  
-    <a href="https://www.linkedin.com/in/megantran15/" style="display: inline-block;">
-      <img src="linkedin.png" alt="Linkedin" style="width:50px;height:auto;" class="icon">
-    </a>
-  
-    <a href="mailto:megantran@usf.edu" style="display: inline-block;">
-      <img src="outlook.png" alt="Outlook" style="width:50px;height:auto;" class="icon">
-    </a>
+  <a href="https://github.com/MeganTran6023" style="display: inline-block;">
+    <img src="GitHub-Mark.png" alt="Github" style="width:50px;height:auto;" class="icon">
+  </a>
+
+  <a href="https://www.linkedin.com/in/megantran15/" style="display: inline-block;">
+    <img src="linkedin.png" alt="Linkedin" style="width:50px;height:auto;" class="icon">
+  </a>
+
+  <a href="mailto:megantran@usf.edu" style="display: inline-block;">
+    <img src="outlook.png" alt="Outlook" style="width:50px;height:auto;" class="icon">
+  </a>
 </div>
 
 </body>
