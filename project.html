@@ -49,7 +49,7 @@ body {
   padding: 10px 15px;
   margin-top: 7px;
   margin-bottom: 7px;
-  height: 300px;
+  height: 380px;
 }
 .icon {
   width: 20px;
@@ -59,6 +59,23 @@ body {
 .homelink a {
     color: lime; /* Green text for links */
     text-decoration: none; /* No underline for links */
+}
+
+figure figcaption{
+  text-align: center;
+  padding-right: 20%;
+}
+
+.pproject{
+  font-size: 22px;
+  text-align: center;
+  padding-right: 10%;
+
+}
+
+.pproject a{
+  color: lime; /* Green text for links */
+  text-decoration: none; /* No underline for links */
 }
 
 @media only screen and (max-width:800px) {
@@ -100,17 +117,23 @@ body {
         <img src="chemistryset_dribbble.gif" alt="WetChem" class="proj_icon">
       </a>
       <figcaption>Credit: Dan Stack </figcaption>
+      <div class="pproject"><p class="pproject"><br> <a href="#WetChem">Wet Chemistry</a></p></div>
       </figure>
 
+      <figure>
       <a href="#ComputationalChem" style="display: inline-block;">
         <img src="CompChem.png" alt="CompChem" class="proj_icon">
       </a>
+      <figcaption></figcaption>
+      <div class="pproject"><p class="pproject"><br> <a href="#CompChem">Computational Chemistry</a></p></div>
+      </figure>
 
       <figure>
       <a href="#CompSci" style="display: inline-block;">
         <img src="codingcomputer.gif" alt="CompSci" class="proj_icon" >
       </a>
-      <figcaption>Credit: Unknown </figcaption>
+      <figcaption>Credit: Linkedin </figcaption>
+      <div class="pproject"><p class="pproject"><br> <a href="#CompSci">Computer Science</a></p></div>
       </figure>
 
 
