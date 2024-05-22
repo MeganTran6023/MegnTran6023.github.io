@@ -68,6 +68,29 @@ body {
     text-decoration: none; /* No underline for links */
 }
 
+.proj_icon {
+  width: 100%; /* Make image responsive */
+  max-width: 250px; /* Optional: Set a max-width to control large images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.proj_icons {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to new lines */
+  justify-content: center; /* Center items horizontally */
+  gap: 17px; /* Add space between items */
+}
+
+figure {
+  text-align: center;
+  width: 100%;
+  max-width: 250px; /* Optional: Set a max-width for figures */
+}
+
+figure figcaption {
+  text-align: center;
+}
+
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -102,7 +125,28 @@ body {
 
   <div class="main">
     <h2>Artwork</h2>
-    <p>In Progress.</p>
+    <div class="proj_icons">
+      <figure>
+        <a href="#WetChem" style="display: inline-block;">
+          <img src="Please Stand By.jpg" alt="art" class="proj_icon">
+        </a>
+        <figcaption>Please Stand By </figcaption>
+      </figure>
+
+      <figure>
+        <a href="#ComputationalChem" style="display: inline-block;">
+          <img src="The Sonics.jpg" alt="CompChem" class="proj_icon">
+        </a>
+        <figcaption>The Ultimate Sonics</figcaption>
+      </figure>
+
+      <figure>
+        <a href="#CompSci" style="display: inline-block;">
+          <img src="aurora.jpg" alt="art" class="proj_icon">
+        </a>
+        <figcaption>Aurora</figcaption>
+      </figure>
+    </div>
   </div>
 
   <div class="right"></div>
