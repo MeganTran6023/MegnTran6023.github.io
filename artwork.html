@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lightbox.css">
 <style>
 * {
   box-sizing: border-box;
@@ -127,21 +128,21 @@ figure figcaption {
     <h2>Artwork</h2>
     <div class="proj_icons">
       <figure>
-        <a href="#WetChem" style="display: inline-block;">
+        <a href="Please Stand By.jpg" style="display: inline-block;" data-lightbox="test" data-title="Please Stand By">
           <img src="Please Stand By.jpg" alt="art" class="proj_icon">
         </a>
         <figcaption>Please Stand By </figcaption>
       </figure>
 
       <figure>
-        <a href="#ComputationalChem" style="display: inline-block;">
+        <a href="The Sonics.jpg" style="display: inline-block;" data-lightbox="test" data-title="The Ultimate Sonics">
           <img src="The Sonics.jpg" alt="CompChem" class="proj_icon">
         </a>
         <figcaption>The Ultimate Sonics</figcaption>
       </figure>
 
       <figure>
-        <a href="#CompSci" style="display: inline-block;">
+        <a href="aurora.jpg" style="display: inline-block;" data-lightbox="test" data-title="Aurora">
           <img src="aurora.jpg" alt="art" class="proj_icon">
         </a>
         <figcaption>Aurora</figcaption>
@@ -165,6 +166,6 @@ figure figcaption {
     <img src="outlook.png" alt="Outlook" style="width:50px;height:auto;" class="icon_outlook">
   </a>
 </div>
-
+  <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
