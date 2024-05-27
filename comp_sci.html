@@ -66,12 +66,29 @@ p {
 
 /* add bordered rounded corners */
 #rcorners2 {
-    border-radius: 25px;
-    border: 2px solid #32CD32;
-    padding: 20px; 
-    width: 100%;
-    height: 100%;  
-  }
+  display: flex; /* Allow flexible content positioning */
+  flex-direction: column; /* Stack elements vertically (default) */
+  align-items: center; /* Center content horizontally */
+  margin: 0 auto; /* Center #rcorners2 horizontally */
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid #32CD32;
+}
+
+
+p.thick {
+  font-weight: bold;
+}
+
+.description {
+  color: #e6ffe6;
+}
+
+img.proj_icon {
+  width: 100%; /* Ensure image scales down on smaller screens */
+  max-width: 500px; /* Optional maximum width for larger screens */
+  margin: 10px auto; /* Add optional spacing around the image */
+}
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -89,6 +106,13 @@ p {
     width: 100%;
   }
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) { 
+  #rcorners2 {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
 </style>
 </head>
 <body style="font-family:Lucida Console, Courier New, monospace;">
@@ -96,17 +120,23 @@ p {
   <div style="background-color:#333;padding:15px;">
     <div class="homelink"><h1 style="color:lime;"><a href="index.html">Megan Tran</a></h1></div>
   </div>
+  
+  <div style="overflow:auto">
+    <div class="menu">
+      <div class="menuitem"><a href="project.html">Projects</a></div>
+      <div class="menuitem"><a href="MeganTran_Resume1.1.pdf">Resume</a></div>
+      <div class="menuitem"><a href="artwork.html">Artwork</a></div>
+    </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem"><a href="project.html">Projects</a></div>
-    <div class="menuitem"><a href="MeganTran_Resume1.1.pdf">Resume</a></div>
-    <div class="menuitem"><a href="artwork.html">Artwork</a></div>
-  </div>
-
-  <div class="main">
-    <p id ="rcorners2">In progress</p>
-  </div>
+    <div class="main">
+      <div id="rcorners2">
+        <p class="thick">Computer Science</p>
+        <p>May 2024 - Present</p>
+          <img src="shapley_MT.png" alt="SHAPley" class="proj_icon">
+          <p class="description">Coding Languages: Python</p>
+        <p class="description">In Dr. Templeton's lab, I execute various machine learning models on a cleaned concussion dataset to determine of the patients taking either amantadine or stimulant (or both) have lower values for days_2_clearance (number of days until patient is cleared).</p>
+      </div>
+    </div>
 
 
 </div>
